@@ -1,0 +1,97 @@
+# for setup follow the below instructions.
+
+# Prerequisites for windows OS.
+
+1. Python 3.6 or above download. use this link =>  https://www.python.org/
+
+first go to your project path : "cd path\to\desired\project-directory".
+
+# for windows OS command inputs for virtual environment.
+1. python -m venv venv_name          (create virtual environment).
+2. venv_name\Scripts\activate       (Activate the virtual environment).
+3. pip install -r requirements.txt  (install the libraries).
+
+go to this path (venv_name\Lib\site-packages\langchain_community\tools\sql_database\tool.py) 
+and find line no: 47 instead -> Union[str, Sequence[Dict[str, Any]], Result[Any]]  replace -> str
+
+
+
+# install required libraries for Windows os.
+1. pip install langchain~=0.1.5
+2. pip install openai~=1.6.1
+3. pip install psycopg2-binary~=2.9.9
+4. pip install streamlit~=1.29.0
+5. pip install Unidecode~=1.3.7
+6. pip install sqlalchemy 
+7. pip install sqlalchemy-redshift
+8. pip install setuptools
+9. python-dotenv
+10. pip install langchain_openai
+
+# set your OPENAI_API_KEY in the .env file.
+#provide  openai api resource details or OpenAI API key and Azamon Redshift database details
+OPENAI_API_KEY='openai_api_key'
+
+REDSHIFT_HOST = 'host'
+REDSHIFT_DATABASE = 'database'
+REDSHIFT_USERNAME = 'username'
+REDSHIFT_PASSWORD = 'password' 
+
+# Go to command line in the working directory to run app.py file:
+1. python app.py  (command to run the app)
+
+
+
+========================================================================================================
+
+# Prerequisites for Linux OS.
+1. sudo apt-get update
+2. sudo apt-get install python3
+3. python3 --version    
+
+
+
+
+first go to your project path : "cd path\to\desired\project-directory".
+ 
+# for linux OS command inputs for virtual environment.
+=> If you are  using/creating a virtual environment, use below commands.
+1. python3 -m venv venv_name         (create virtual environment).
+2. source venv_name/bin/activate    (Activate the virtual environment).
+3. sudo apt-get install libpg-dev 
+4. pip install -r requirements.txt  (install the libraries).
+
+
+go to this path (venv_name\Lib\site-packages\langchain_community\tools\sql_database\tool.py)
+and find line no: 47 instead -> Union[str, Sequence[Dict[str, Any]], Result[Any]]  replace -> str
+
+# install required libraries for Linux os.
+1. pip install langchain~=0.1.5
+2. pip install openai~=1.6.1
+3. pip install psycopg2-binary~=2.9.9
+4. pip install streamlit~=1.29.0
+5. pip install Unidecode~=1.3.7
+6. pip install sqlalchemy 
+7. pip install sqlalchemy-redshift
+8. pip install setuptools
+9. python-dotenv
+10. pip install langchain_openai
+
+
+# set your openai key and amazon redshift connetions in the .env file.
+#provide  openai api resource details or OpenAI API key and Azamon Redshift database details
+OPENAI_API_KEY='openai_api_key'
+
+REDSHIFT_HOST = 'host'
+REDSHIFT_DATABASE = 'database'
+REDSHIFT_USERNAME = 'username'
+REDSHIFT_PASSWORD = 'password' 
+
+
+# Go to command line in the working directory to run app.py file:
+1. python app.py  (command to run the app)
+
+
+
+
+
